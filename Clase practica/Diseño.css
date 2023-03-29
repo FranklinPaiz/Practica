@@ -1,0 +1,416 @@
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 100px;
+	color: rgb(4, 78, 7);
+	animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+form {
+	display: flex;
+}
+
+input[type="text"] {
+	padding: 8px;
+	border: none;
+	border-radius: 4px 0 0 4px;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #ddd;
+	color: #333;
+	padding: 20px;
+    text-align: center;
+}
+
+/* Estilos generales */
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+/* Estilos para el encabezado */
+
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+/* Estilos para la lista de navegación */
+
+header nav ul {
+	display: flex;
+	align-items: center;
+	margin-right: 50px;
+}
+
+header nav ul li {
+	margin-left: 20px;
+}
+
+header nav ul li:first-child {
+	margin-left: 0;
+}
+
+header nav ul li a {
+	font-size: 1.2rem;
+	color: rgb(51, 51, 51);
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+	background-color: rgb(29, 160, 6);
+}
+
+
+
+
+/* Estilos para la barra de búsqueda */
+
+header form {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+header form input {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	margin-right: 10px;
+	flex-grow: 1;
+}
+
+header form button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+header form button:hover {
+	background-color: #3E8E41;
+}
+
+
+/* Estilos para el banner */
+
+.banner {
+	background-image: url('banner.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.banner h1 {
+	font-size: 4rem;
+	margin-bottom: 20px;
+}
+
+.banner p {
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+.banner button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+/* Estilos para los servicios */
+
+.services {
+	background-color: #f9f9f9;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.services h2 {
+	font-size: 2.5rem;
+	margin-bottom: 40px;
+}
+
+.services .service {
+	display: inline-block;
+	width: calc(33.33% - 40px);
+	margin: 20px;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+.services .service:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.services .service img {
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.services .service h3 {
+	font-size: 1.5rem;
+	margin: 20px;
+}
+
+.services .service p {
+	font-size: 1.2rem;
+	margin: 20px;
+}
+
+.services .service button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+/* Estilos para los testimonios */
+
+.testimonials {
+    background-color: #f8f8f8;
+    background-image: url(Image/Imagen4.jpg);
+    background-size: cover;
+    background-position: center;
+	padding: 50px 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin: 2rem 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.testimonials-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.testimonial {
+	background-color: #fff;
+	max-width: 400px;
+	margin: 0 30px 30px 30px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	margin-right: 20px;
+}
+
+.testimonial h3 {
+	margin: 0;
+	color: #333;
+	font-size: 1.2rem;
+}
+
+.testimonial p {
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.testimonial-quote {
+	font-size: 1.5rem;
+	margin-top: 10px;
+	color: #333;
+}
+
+.testimonial-author {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+
+
+
+footer {
+	background-color: rgb(202, 228, 200);
+	color: rgb(36, 105, 9);
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-links {
+	display: flex;
+	align-items: center;
+}
+
+.footer-links a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 20px;
+}
+
+.footer-social {
+	display: flex;
+	align-items: center;
+}
+
+.footer-social a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.footer-social a i {
+	font-size: 1.5rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.footer-social a:hover i {
+	transform: scale(1.2);
+}
+
+.divider {
+    border: none;
+    border-top: 80px solid rgb(0, 0, 0);
+    margin: 50px 0;
+  }
+  
+  .tips {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .tips h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .tips h2:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  .tip-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tip {
+    flex-basis: calc(33.33% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tip:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tip h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .tip p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
